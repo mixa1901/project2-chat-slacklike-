@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+.channel, .ex_channels, #exist_channel, #new_channel {
+    display: none;
+}
+
+a {
+    color: white;
+}
+
+a:hover {
+    color: white;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.index {
+    margin:70px;
+}
+
+#messages {
+    margin-top:70px;
+    margin-bottom:90px;
+
+}
+
+.mes {
+    word-wrap: break-word;
+}
+
+li {
+    margin: 0 0 3px 0;
+}
+
+.form-control:focus {
+    border-color: #ffffff;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(255, 255, 255, 0.5);
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <!-- documentation at http://getbootstrap.com/docs/4.0/, alternative themes at https://bootswatch.com/4-alpha/ -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link href="/static/styles.css" rel="stylesheet"/>
+        <link rel="shortcut icon" href="/static/favicon.png" type="image/png" />
+        <title>Chat app: {% block title %}{% endblock %}</title>
+        <script src="/static/script.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <nav class="navbar fixed-top navbar-dark bg-dark">
+            <div class="container">
+            <h2><a  id="main" href="/">Chaterino</a> {% block h2 %}{% endblock %}</h2>
+            </div>
+            </nav>
+
+            <main>
+                {% block main %}{% endblock %}
+            </main>
+        </div>
+    </body>
+
+</html>

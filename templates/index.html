@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User
+{% endblock %}
+
+{% block main %}
+	<div class="index">
+		<h4 id="greetings" class="text-center exist"></h4>
+
+
+
+
+		<div class = "row">
+			<div class = "col-lg-6">
+				
+				<div class="text-center"><button id="new_channel" class="exist btn btn-light ">Create new channel</button></div>
+				<h3 id="greet_chan"></h3>
+				<p></p>
+				<div class="channel">
+					<form id="channel">
+						<div class="form-group">
+					        <input id="name_channel" placeholder="Type channel's name" autocomplete="off" type="text" autofocus class="form-control">
+					    </div>
+					    <button id='channelsub' class="btn btn-light float-right">Submit</button>
+					</form>
+				</div>
+			</div>
+			<div class = "col-lg-6">
+				
+				<div class="text-center"><button id="exist_channel" class="exist btn btn-light">Choose existing channel</button></div>
+				<p></p>
+				<div class="ex_channels">
+					<ul id="ex_channels">
+					</ul>
+				</div>
+			</div>
+	    </div>
+
+		<div class="username">
+		    <div class="form-group">
+		      <input id="username" placeholder="Type your username" autocomplete="off" type="text" autofocus class="form-control">
+		    </div>
+		    <button id='name' class="btn btn-light float-right">Submit name</button>
+		</div>
+	</div>
+{% endblock %}

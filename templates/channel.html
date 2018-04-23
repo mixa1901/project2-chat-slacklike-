@@ -1,0 +1,43 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    User
+{% endblock %}
+
+{% block h2 %}
+    /{{ url }}
+{% endblock %}
+
+{% block main %}
+
+<ul id="messages">
+    {% for id, time, sender, message in messages %}
+    <li>
+    <div id="{{ id }}" class="row">
+        <div class="col-lg-1 col-xl-1 col-md-1 col-sm-1">
+            <b>{{sender}}</b><b>:</b>
+        </div>
+        <div class="mes col-lg-9 col-xl-9 col-md-9 col-sm-9 ">
+                {{message}}
+        </div>
+        <div class="col-lg-1 col-xl-1 col-md-1 col-sm-1">
+            {{time}}
+        </div>
+
+    </div>
+    </li>
+	{% endfor %}
+    </ul>
+
+<nav class="navbar fixed-bottom navbar-dark bg-dark">
+    <div class="container">  
+         <div class="input-group">
+            <input id= "message" type="text" class="form-control" placeholder="Type your message...">
+            <span class="input-group-btn">
+            <button id = "send" class="btn btn-secondary" type="button">Send</button>
+            </span>
+        </div>
+    </div>
+</nav>
+    
+{% endblock %}
